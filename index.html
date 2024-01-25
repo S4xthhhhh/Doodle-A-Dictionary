@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./binoculars-fill.svg" type="image/x-icon">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="screen">
+        <div class="container">
+            <div class="logo">
+                <img src="./Doodle-removebg-preview.png" alt="" id="logo">
+            </div>
+            <div class="element">
+                <input type="text" placeholder="Enter the word" id="input-search">
+                <button id="input-btn" onclick="btn_clicked()"><img src="./binoculars-fill.svg" alt="binoculars-fill"></button>
+            </div>
+            <div class="result" id="result">
+                <p id="input-word"></p>
+                <small id="phonetic"></small>
+                <hr>
+                <small id="POS"></small>
+                <p class="meaning" id="Meaning"></p>
+                <p class="example"><span id="Example"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

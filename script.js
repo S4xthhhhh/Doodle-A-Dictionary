@@ -1,5 +1,9 @@
 function btn_clicked(){
     const word =document.getElementById("input-search").value;
+    document.getElementById("phonetic").textContent='';
+    document.getElementById("POS").textContent='';
+    document.getElementById("Meaning").textContent='';
+    document.getElementById("Example").textContent="";
     getMeaning(word)
 }
 

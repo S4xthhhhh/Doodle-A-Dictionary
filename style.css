@@ -13,6 +13,9 @@ body{
 .container{
     width: 500px;
     height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center
 }
 .logo{
     display: flex;

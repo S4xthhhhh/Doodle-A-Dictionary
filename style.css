@@ -17,7 +17,6 @@ body{
 .logo{
     display: flex;
     justify-content: center;
-    height: 20svh;
 }
 #logo{
     height: 200px;
@@ -26,7 +25,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20svh;
 }
 #input-search{
     margin: 10px;

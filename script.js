@@ -20,5 +20,7 @@ async function getMeaning(word){
         document.getElementById("Example").textContent=response[0].meanings[0].definitions[0].example
     }else{
         document.getElementById("error").style.display="block"
+
+document.getElementById("result").style.display="none";
     }
 }

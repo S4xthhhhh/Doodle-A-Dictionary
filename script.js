@@ -4,6 +4,7 @@ function btn_clicked(){
     document.getElementById("POS").textContent='';
     document.getElementById("Meaning").textContent='';
     document.getElementById("Example").textContent="";
+    document.getElementById("error").style.display="none"
     getMeaning(word)
 }
 
@@ -11,7 +12,6 @@ async function getMeaning(word){
     let data = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
     let response = await data.json()
      if(response[0]?.meanings[0]?.partOfSpeech){
-        console.log("OK")
         document.getElementById("result").style.display="block";
         document.getElementById("input-word").textContent=word
         document.getElementById("phonetic").textContent=response[0].phonetic

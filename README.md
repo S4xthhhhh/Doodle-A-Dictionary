@@ -1,6 +1,6 @@
 ﻿# Doodle-A Dictionary
 
-Doodle Dictionary is a web-based dictionary application developed by Sangeeth S Devan. It allows users to search for definitions, synonyms, and examples of words, making it a handy tool for writers, students, and language enthusiasts.
+Doodle Dictionary is a web-based dictionary application developed by Sangeeth S Devan. It allows users to search for definitions and examples of words, making it a handy tool for writers, students, and language enthusiasts.
 
 ## Technologies Used
 

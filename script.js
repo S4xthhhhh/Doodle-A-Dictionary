@@ -24,6 +24,10 @@ async function getMeaning(word){
         defArray.forEach((value)=>{
         document.getElementById("Meaning").insertAdjacentHTML('afterend', '<li>'+value.definition+'</li>')
         })
+        const meaningArray=defArray.filter(value=>value.meanings)
+        meaningArray.forEach((value)=>{
+            document.getElementById("Example").insertAdjacentHTML("afterend",'<li>'+value.example+'</li>')
+        })
 
         if(response[0]?.meanings[1]?.definitions[0]){
             document.getElementById("s-POS").textContent=response[0].meanings[1].partOfSpeech
@@ -32,8 +36,11 @@ async function getMeaning(word){
             defArraytwo.forEach((value)=>{
             document.getElementById("s-Meaning").insertAdjacentHTML('afterend', '<li>'+value.definition+'</li>')
         })
-        }
-    }else{
+        const meaningArraytwo=defArray.filter(value=>value.meanings)
+        meaningArraytwo.forEach((value)=>{
+            document.getElementById("s-Example").insertAdjacentHTML("afterend",'<li>'+value.example+'</li>')
+        })
+    }}else{
         document.getElementById("error").style.display="block"
         document.getElementById("result").style.display="none";
     }

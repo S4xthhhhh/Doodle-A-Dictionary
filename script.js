@@ -4,6 +4,9 @@ function btn_clicked() {
   document.getElementById("POS").textContent = "";
   document.getElementById("Meaning").textContent = "";
   document.getElementById("Example").textContent = "";
+  document.getElementById("s-POS").textContent = "";
+  document.getElementById("s-Meaning").textContent = "";
+  document.getElementById("s-Example").textContent = "";
   getMeaning(word);
 }
 
@@ -39,8 +42,6 @@ async function getMeaning(word) {
     if (response[0]?.meanings[1]?.definitions[0]) {
       document.getElementById("s-POS").textContent =
         response[0].meanings[1].partOfSpeech;
-      document.getElementById("s-Example").textContent =
-        response[0].meanings[1].definitions[0].example;
       const defArraytwo = response[0].meanings[1].definitions;
       defArraytwo.forEach((value) => {
         document

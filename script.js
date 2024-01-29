@@ -2,11 +2,11 @@ function btn_clicked() {
   const word = document.getElementById("input-search").value;
   document.getElementById("phonetic").textContent = "";
   document.getElementById("POS").textContent = "";
-  document.getElementById("Meaning").textContent = "";
-  document.getElementById("Example").textContent = "";
+  document.getElementById("Meaning"). innerHTML = "";
+  document.getElementById("Example"). innerHTML = "";
   document.getElementById("s-POS").textContent = "";
-  document.getElementById("s-Meaning").textContent = "";
-  document.getElementById("s-Example").textContent = "";
+  document.getElementById("s-Meaning").innerHTML = "";
+  document.getElementById("s-Example").innerHTML = "";
   getMeaning(word);
 }
 
